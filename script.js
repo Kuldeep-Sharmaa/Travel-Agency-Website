@@ -315,17 +315,22 @@ function oneStep() {
   }
   if (upi.indexOf("@") === -1) {
     document.getElementById("error-upi").innerHTML =
-      "<span style='color: red;'>Enter Vaild Upi Id</span>";
+      "<span style='color: red;'>Enter Vaild UPI Id</span>";
     setTimeout(function () {
       document.getElementById("error-upi").innerText = "";
     }, 10000);
     return false;
-  } else {
-    document.getElementById("error-upi").innerHTML =
-      "<span style='color: green;'>Payment Done </span>";
   }
+  // show wait message
 
-  document.querySelector(".status-final").style.display = "inline";
+  document.querySelector(".Payment-final").style.display = "flex";
+  setTimeout(function () {
+    document.querySelector(".Payment-final").style.display = "none";
+    // after disapare the msg show this msg
+    document.getElementById("error-upi").innerHTML =
+      "<span style='color: green;'>Payment Confirmed</span>";
+    document.querySelector(".status-final").style.display = "inline";
+  }, 5000);
 
   setTimeout(function () {
     window.location.href =
@@ -346,7 +351,7 @@ function oneStep() {
       encodeURIComponent(tourPack) +
       "&tourPeople=" +
       encodeURIComponent(tourPeople);
-  }, 4000);
+  }, 8000);
   return true;
 }
 
