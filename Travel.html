@@ -37,13 +37,13 @@
             >
               <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item mx-4">
-                  <a class="nav-link" href="#location">Packages</a>
+                  <a class="nav-link" href="#Package">Packages</a>
                 </li>
                 <li class="nav-item mx-4">
-                  <a class="nav-link" href="#Package">International </a>
+                  <a class="nav-link" href="#International">International </a>
                 </li>
                 <li class="nav-item mx-4">
-                  <a class="nav-link" href="#">Explore</a>
+                  <a class="nav-link" href="#Explore">Explore</a>
                 </li>
                 <li class="nav-item mx-4">
                   <a class="nav-link" href="#about">About</a>
@@ -112,7 +112,7 @@
         <!-- location -->
         <div class="location">
           <!-- offer -->
-          <div class="row">
+          <div class="row" id="Package">
             <div id="head" class="p-sm-0 p-md-5">
               <div class="lead">
                 <div>
@@ -253,7 +253,7 @@
           </div>
           <!-- International-->
           <div class="row">
-            <div class="Package">
+            <div class="Package" id="International">
               <div class="lead">
                 <div>
                   <h2 id="tour-name">International Destinations!</h2>
@@ -283,8 +283,8 @@
                               <div class="details">
                                 <p>Starting at ₹17,900 Per person</p>
                               </div>
-                              <div class="d-inline-block" id="btn-2">
-                                Book Now
+                              <div class="d-inline-block">
+                                <button id="btn-2">Book Now</button>
                               </div>
                             </div>
                           </a>
@@ -312,7 +312,9 @@
                         </div>
                         <!-- Maldives -->
                         <div class="card">
-                          <a href="Booking.html?destination=Maldi&price=12,900">
+                          <a
+                            href="Booking.html?destination=Maldives&price=12,900"
+                          >
                             <div id="photo">
                               <img
                                 src="img/maldives.jpg"
@@ -360,7 +362,7 @@
           </div>
           <!-- Explore-->
           <div class="row">
-            <div class="Package">
+            <div class="Package" id="Explore">
               <h2 id="tour-name">Explore the Unexplored</h2>
               <div id="img-card" class="d-flex justify-content-evenly mt-4">
                 <!-- 1st -->

@@ -162,7 +162,7 @@ function Create() {
 
 // Confirm the details
 function oneStep() {
-  var yourCity = document.getElementById("from-city").value;
+  var yourCity = document.getElementById("from-state").value;
   var tourPack = document.getElementById("inputSta").value;
   var tourDate = document.getElementById("tour-date").value;
   var tourPeople = document.getElementById("number-people").value;
@@ -181,10 +181,10 @@ function oneStep() {
   var Today = new Date(tourDate);
 
   if (!yourCity || yourCity === "" || !isNaN(yourCity)) {
-    document.getElementById("error-city").innerHTML =
-      "<span style='color: red;'> Enter your city</span>";
+    document.getElementById("error-state").innerHTML =
+      "<span style='color: red;'> Choose your State </span>";
     setTimeout(function () {
-      document.getElementById("error-city").innerText = "";
+      document.getElementById("error-state").innerText = "";
     }, 3000);
   }
   if (!tourPack || tourPack === "") {

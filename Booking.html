@@ -19,7 +19,7 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Logo</a>
+            <a class="navbar-brand" href="Travel.html">Logo</a>
             <button
               class="navbar-toggler"
               type="button"
@@ -37,19 +37,21 @@
             >
               <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item mx-4">
-                  <a class="nav-link" href="#">Packages</a>
+                  <a class="nav-link" href="Travel.html#Package">Packages</a>
                 </li>
                 <li class="nav-item mx-4">
-                  <a class="nav-link" href="#">International </a>
+                  <a class="nav-link" href="Travel.html#International"
+                    >International
+                  </a>
                 </li>
                 <li class="nav-item mx-4">
-                  <a class="nav-link" href="#">Explore</a>
+                  <a class="nav-link" href="Travel.html#Explore">Explore</a>
                 </li>
                 <li class="nav-item mx-4">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="Travel.html#about">About</a>
                 </li>
                 <li class="nav-item mx-4">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="Travel.html#footer">Contact</a>
                 </li>
               </ul>
             </div>
@@ -81,7 +83,11 @@
                   <img src="img/Beach.jpg" class="d-block w-100" alt="..." />
                 </div>
                 <div class="carousel-item active">
-                  <img src="img/Kerala.jpg" class="d-block w-100" alt="..." />
+                  <img
+                    src="img/Australia.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
                 </div>
                 <div class="carousel-item active">
                   <img
@@ -91,6 +97,12 @@
                   />
                 </div>
               </div>
+            </div>
+            <div class="mt-3">
+              <i class="fa-solid fa-star" style="color: #74c0fc"></i> Things You
+              Will Love <br />
+              Unbelievable discounts on hotels and spas in
+              <span id="selected-destination-4"></span>.
             </div>
           </div>
           <div class="col-md-4">
@@ -163,6 +175,7 @@
     <!-- Forms -->
     <section id="confirm">
       <div class="container">
+        <h1>Confirm Your Booking</h1>
         <div class="row justify-content-between">
           <div class="col-md-5" id="user-deatils">
             <form action="" class="row g-3">
@@ -174,12 +187,46 @@
                 </div>
               </div>
 
-              <!-- City -->
+              <!-- State -->
               <div class="col-md-6">
-                <label for="inputState" class="form-label">From</label>
+                <label for="inputState" class="form-label"
+                  >Departure State</label
+                >
                 <div class="form-group">
-                  <input type="text" class="form-control" id="from-city" />
-                  <p><span id="error-city"></span></p>
+                  <select id="from-state" class="form-select">
+                    <option value="" selected disabled>
+                      Select Departure State
+                    </option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                  </select>
+                  <p><span id="error-state"></span></p>
                 </div>
               </div>
 
@@ -192,29 +239,29 @@
                 </div>
               </div>
 
-              <!-- Pakeage  -->
               <div class="col-md-6">
                 <label for="inputState" class="form-label"
-                  >Select Your Package</label
+                  >Duration of Stay</label
                 >
                 <div class="form-group">
                   <select id="inputSta" class="form-select">
                     <option value="" selected disabled>Choose...</option>
-                    <option value="2 Days">2 Days</option>
-                    <option value="5 Days">5 Days</option>
-                    <option value="1 Week">1 Week</option>
-                    <option value="10 Days">10 Days</option>
-                    <option value="2 Weeks">2 Weeks</option>
+                    <option value="2 Days / 1 Night">2 Days / 1 Night</option>
+                    <option value="3 Days / 2 Nights">3 Days / 2 Nights</option>
+                    <option value="5 Days / 4 Nights">5 Days / 4 Nights</option>
+                    <option value="7 Days / 6 Nights">7 Days / 6 Nights</option>
+                    <option value="10 Days / 9 Nights">
+                      10 Days / 9 Nights
+                    </option>
                     <option value="Customisable">Customisable</option>
                   </select>
                   <p><span id="error-pack"></span></p>
                 </div>
               </div>
+
               <!-- NUmber of People -->
               <div class="col-md-6">
-                <label for="inputNumber" class="form-label"
-                  >Number of People</label
-                >
+                <label for="inputNumber" class="form-label">Add Traveler</label>
                 <div class="form-group">
                   <input
                     type="number"
@@ -268,7 +315,7 @@
           </div>
 
           <div class="col-md-4" id="show">
-            <span id="msg" class="d-flex"
+            <span id="msg"
               ><i class="fa-solid fa-circle-exclamation mx-2"></i> For your
               protection, please verify your identity.</span
             >
@@ -330,21 +377,25 @@
               </div>
 
               <!-- UPI ID -->
-              <div class="col-md-6" id="showUpi">
+              <div class="" id="showUpi">
                 <label for="inputState" class="form-label"
                   >Enter Your UPI Id</label
                 >
-                <div class="form-group">
+                <div class="form-group col-md-6">
                   <input
                     type="text"
                     class="form-control"
                     aria-label="name"
                     id="upi"
                   />
-                  <p><span id="error-upi"></span></p>
                 </div>
+                <div class="col-md-12">
+                  <span id="passwordHelpInline" class="form-text">
+                    Exp: yourname@upi or mobileNumber@upi
+                  </span>
+                </div>
+                <p><span id="error-upi"></span></p>
               </div>
-
               <!-- Submiit -->
               <div class="col-md-12 text-center">
                 <label for="submit" class="form-label"></label>
@@ -429,6 +480,8 @@
           document.getElementById("selected-destination-2").textContent =
             destination;
           document.getElementById("selected-destination-3").textContent =
+            destination;
+          document.getElementById("selected-destination-4").textContent =
             destination;
           document.getElementById("selected-price").textContent = price;
         }
