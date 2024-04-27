@@ -43,7 +43,7 @@ header {
 /* main-section-start */
 #main {
   padding: 5rem 0rem 7rem;
-  background-image: url(img/advanture.jpg);
+  background-image: url(img/advanture.jpg) !important;
   background-repeat: no-repeat;
   background-size: cover;
 }

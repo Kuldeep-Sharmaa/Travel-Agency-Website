@@ -16,6 +16,9 @@
   header {
     position: absolute;
   }
+  #details {
+    margin-top: 2rem;
+  }
 
   #memory h1 {
     font-size: 2rem;
@@ -64,8 +67,5 @@
   }
   .lead {
     margin-top: 2rem;
-  }
-  .points ul {
-    padding: 0;
   }
 }
