@@ -13,9 +13,6 @@
   }
 }
 @media screen and (max-width: 576px) {
-  header {
-    position: absolute;
-  }
   #details {
     margin-top: 5rem;
   }
