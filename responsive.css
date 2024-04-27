@@ -16,6 +16,9 @@
   header {
     position: absolute;
   }
+  #front-page {
+    padding: 0;
+  }
   #memory h1 {
     font-size: 2rem;
   }
