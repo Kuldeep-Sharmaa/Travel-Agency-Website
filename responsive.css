@@ -1,0 +1,70 @@
+@media screen and (max-width: 1200px) {
+  #main h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .user-phone {
+    display: block;
+    text-align: center;
+  }
+  .user {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  header {
+    position: absolute;
+  }
+  #memory h1 {
+    font-size: 2rem;
+  }
+  #log-p {
+    width: 100%;
+  }
+  #place i {
+    font-size: 10rem;
+  }
+  #place-text {
+    font-size: 3rem;
+  }
+  #photo {
+    width: 100%;
+    max-width: none;
+    height: auto !important;
+  }
+  #img-card {
+    display: inline !important;
+  }
+  #tour-name {
+    margin: 0;
+    text-align: center !important;
+  }
+  .card {
+    margin: 3rem 0rem;
+    border: none !important;
+  }
+  .user-phone {
+    display: block;
+    text-align: center;
+  }
+  .user {
+    display: none;
+  }
+  #details .carousel-inner {
+    height: 100%;
+    border-radius: 20px;
+  }
+  .adjust {
+    display: none;
+  }
+  .Package {
+    padding: 2rem 0rem 0rem;
+  }
+  .lead {
+    margin-top: 2rem;
+  }
+  .points ul {
+    padding: 0;
+  }
+}

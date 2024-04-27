@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Your Account</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item mx-4">
+                  <a class="nav-link" href="#">Packages</a>
+                </li>
+                <li class="nav-item mx-4">
+                  <a class="nav-link" href="#">International </a>
+                </li>
+                <li class="nav-item mx-4">
+                  <a class="nav-link" href="#">Explore</a>
+                </li>
+                <li class="nav-item mx-4">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item mx-4">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section id="result">
+      <div class="container">
+        <div class="row">
+          <div class="bill-details col-md-6">
+            <h2>Booking Details</h2>
+            <p>
+              <strong>Name:</strong>
+              <span id="username" class="text-uppercase"></span>
+            </p>
+            <p>
+              <strong>ID:</strong>
+              <span id="userID"></span>
+            </p>
+            <p><strong>Email:</strong> <span id="usermail"></span></p>
+            <p><strong>Payment Method:</strong> <span id="payment"></span></p>
+            <p>
+              <strong>From:</strong>
+              <span id="city" class="text-uppercase"></span>
+            </p>
+            <p>
+              <strong>Destination:</strong>
+              <span id="finalPonit" class="text-uppercase"></span>
+            </p>
+            <p><strong>Date:</strong> <span id="date"></span></p>
+            <p><strong>Package:</strong> <span id="pack"></span></p>
+            <p>
+              <strong>Payment Status:</strong>
+              <span class="payment-status"
+                >Done <i class="fa-solid fa-check"></i
+              ></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div id="footer">
+        <div class="container-fluid container">
+          <div class="row">
+            <div class="col-md-6 d-flex justify-content-center">
+              <div class="col-md-3">
+                <ul>
+                  <a href=""><li class="mb-1">App</li></a>
+                  <a href=""> <li class="mb-1">Store</li></a>
+                  <a href=""> <li class="mb-1">About Us</li></a>
+                  <a href=""> <li>Contact</li></a>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul>
+                  <a href=""> <li class="mb-1">FAQs</li></a>
+                  <a href=""> <li class="mb-1">Privacy Policy</li></a>
+                  <a href=""> <li>Terms & Conditions</li></a>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div id="media">
+                <ul
+                  class="d-flex justify-content-evenly p-0 align-items-center"
+                >
+                  <p>Follow us!</p>
+                  <li>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- mark -->
+        <div class="love">
+          Made with<span class="art"> &#10084; </span> by Kuldeep Sharma
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      window.onload = function () {
+        var params = new URLSearchParams(window.location.search);
+        var lastName = params.get("lastName");
+        var lastMail = params.get("lastMail");
+        var paymentMethod = params.get("paymentMethod");
+        var yourCity = params.get("yourCity");
+        var tourDate = params.get("tourDate");
+        var tourPack = params.get("tourPack");
+        var destonation = params.get("destonation");
+
+        if (
+          lastName &&
+          lastMail &&
+          paymentMethod &&
+          yourCity &&
+          tourDate &&
+          tourPack &&
+          destonation
+        ) {
+          document.querySelector("#username").textContent = lastName;
+          document.getElementById("usermail").textContent = lastMail;
+          document.getElementById("payment").textContent = paymentMethod;
+          document.getElementById("city").textContent = yourCity;
+          document.getElementById("date").textContent = tourDate;
+          document.getElementById("pack").textContent = tourPack;
+          document.getElementById("finalPonit").textContent = destonation;
+        }
+        console.log(destonation);
+      };
+    </script>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- kit -->
+    <script
+      src="https://kit.fontawesome.com/d8f48d71cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

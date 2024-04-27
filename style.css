@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+:root {
+  --main-font--: "Lato", sans-serif;
+  --heading-font--: "Cardo", serif;
+}
+
+body {
+  background-color: rgb(245, 245, 245) !important;
+}
+/* header-style-start */
+
+header {
+  background-color: rgb(245, 245, 245) !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  font-family: var(--main-font--);
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* user-style-start */
+.account {
+  flex-direction: column;
+  align-items: center;
+}
+.account-d {
+  flex-direction: column;
+  align-items: center;
+}
+/* user-style-end */
+
+/* header-style-end */
+
+/* main-section-start */
+#main {
+  padding: 5rem 0rem 7rem;
+  background-image: url(img/advanture.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main h1 {
+  font-family: var(--heading-font--);
+  font-size: 6rem;
+  font-weight: 800;
+}
+#btn {
+  padding: 10px 50px;
+  color: #e9e7e7;
+  font-size: 1rem;
+  font-weight: bolder;
+  background-color: #232323;
+  border-radius: 5px;
+  border: none;
+}
+
+/* main-section-end */
+
+/* memory-section-strat*/
+#memory {
+  background-color: #232323;
+  color: #e9e7e7;
+  padding: 2rem 0rem;
+}
+#memory h1 {
+  font-family: var(--heading-font--);
+  font-size: 4rem;
+  font-weight: bold;
+}
+#log-p {
+  width: 25%;
+}
+#black-btn {
+  padding: 10px 50px;
+  color: #e9e7e7;
+  font-size: 1rem;
+  font-weight: bolder;
+  background-color: #232323;
+  border-color: #e9e7e7;
+  border-radius: 5px;
+  border-width: 3px;
+}
+/* memory-section-end*/
+
+/* place-section-start */
+
+#place {
+  margin: 4rem 0rem;
+}
+#place i {
+  font-size: 15rem;
+}
+#place-text {
+  font-family: var(--heading-font--);
+  font-size: 6rem;
+}
+#place-text span {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+/* card-section */
+
+.card {
+  position: relative;
+  height: auto;
+}
+
+#head {
+  margin: 8rem 0rem 6rem;
+  background-color: #ffff;
+  border-radius: 20px;
+  box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.lead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  position: relative !important;
+  color: #000 !important;
+}
+
+.adjust button {
+  background-color: #0e0d0d;
+  opacity: 1;
+  display: inline-flex;
+  width: 40%;
+  border-radius: 1rem;
+}
+
+#photo {
+  width: 100%;
+  max-width: 14rem;
+  height: 18rem;
+  border-radius: 5px;
+}
+
+#photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: unset;
+  margin-bottom: 1rem;
+}
+.card a {
+  text-decoration: none;
+}
+
+#photo-text {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #333 !important;
+  font-size: 1.2rem;
+}
+
+.Package {
+  margin: 6rem 0rem;
+  padding: 2rem 0rem 8rem;
+  background-color: #ffff;
+  border-radius: 20px;
+  box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
+}
+.Package .carousel-inner {
+  overflow: visible;
+}
+#tour-name {
+  text-align: start !important;
+  font-size: 2rem;
+  margin-left: 4rem;
+  font-weight: 600;
+  font-family: var(--main-font--);
+}
+
+.details {
+  opacity: 0.67;
+  color: #4a4a4a !important;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1;
+}
+.card-title {
+  color: black !important;
+}
+#btn-2 {
+  padding: 8px 30px !important;
+  color: #e9e7e7;
+  font-size: 1rem;
+  font-weight: bolder;
+  background-color: #ff0000;
+  border-radius: 5px;
+  border: none;
+}
+
+/*card-section-end */
+/* place-section-end */
+
+/* user-account-start */
+.user-phone {
+  display: none;
+}
+.user {
+  display: block;
+  text-align: center;
+}
+/* user-account-end */
+
+/* log-in-style-start */
+#form {
+  margin-top: 10rem;
+}
+#front-page {
+  background-image: url(img/dubai.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#logo {
+  color: white;
+}
+#main-form {
+  backdrop-filter: blur(1px) contrast(0.5);
+  border-radius: 20px;
+}
+.status {
+  color: rgb(255, 255, 255);
+  display: none;
+}
+
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+  margin: -5px 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* log-in-style-end*/
+
+/* details-section-start */
+#details {
+  margin-top: 4rem;
+}
+#details .carousel-inner {
+  height: 25rem;
+  border-radius: 20px;
+}
+.points ul li {
+  list-style: circle;
+}
+
+#next-button {
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+}
+/* details-section-end */
+
+/* confirm-form-start */
+#confirm {
+  margin-top: 4rem;
+}
+
+#selected-destination-2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+#show {
+  display: none;
+}
+#msg {
+  color: #19559a;
+}
+#lastStep {
+  padding: 2rem;
+  background-color: #ffff;
+  border-radius: 20px;
+  box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+#user-deatils {
+  padding: 2rem;
+  background-color: #ffff;
+  border-radius: 20px;
+  box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+#final-btn {
+  padding: 8px 30px !important;
+  color: #181818;
+  font-size: 1rem;
+  font-weight: bolder;
+  background-color: #02fe1b;
+  border-radius: 5px;
+  border: none;
+}
+
+#showUpi {
+  display: none;
+}
+/* confirm-form-start */
+
+/* about-section-start */
+#heading {
+  font-size: 5rem;
+  font-weight: bold;
+}
+#achive .card {
+  background-color: transparent;
+  border: none;
+}
+#achive .card-title {
+  font-size: 2.3rem;
+}
+.status-final {
+  color: green;
+  display: none;
+}
+.loader-final {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  animation: spin 2s linear infinite;
+  margin: -5px 10px;
+}
+/* about-section-end */
+
+/* contact-section-start */
+#email {
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  background-color: #fff;
+}
+/* contact-section-end */
+
+/* bill-section-start */
+#result {
+  margin-top: 10rem;
+}
+.bill-details {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: left; /* Align text to the left for better readability */
+}
+.bill-details h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+  text-align: center; /* Center-align the heading */
+}
+.bill-details p {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.bill-details p:last-child {
+  border-bottom: none; /* Remove bottom border from the last paragraph */
+}
+.bill-details strong {
+  font-weight: bold;
+  color: #333;
+  width: 150px; /* Fixed width for consistent spacing */
+  display: inline-block; /* Display as block to enable width property */
+}
+.bill-details span {
+  color: #666;
+}
+.bill-details .payment-status {
+  color: green; /* Style payment status with green color */
+}
+/* bill-section-end */
+
+/* footer-start */
+#footer {
+  background-color: #162535;
+  color: #fff;
+  margin-top: 4rem;
+}
+#footer ul a {
+  color: #fff;
+  text-decoration: none;
+}
+#media ul p i {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+.love {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-family: "Courier New";
+  align-items: center;
+  color: #ffff;
+}
+
+.art {
+  margin: 5px;
+  font-weight: 800;
+  color: rgb(199, 25, 25);
+}
+/* footer-end */
