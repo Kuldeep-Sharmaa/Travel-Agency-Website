@@ -55,7 +55,7 @@
               <div class="user-phone">
                 <div class="account">
                   <span><i class="fa-regular fa-user"></i></span>
-                  <a href=""><div class="name"></div></a>
+                  <a href=""><div class="name-phn"></div></a>
                 </div>
               </div>
             </div>
@@ -660,6 +660,7 @@
         var nam = params.get("nam");
         if (nam) {
           document.querySelector(".name").textContent = nam;
+          document.querySelector(".name-phn").textContent = nam;
         }
       };
     </script>
