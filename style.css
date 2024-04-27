@@ -300,7 +300,7 @@ header {
   font-weight: 600;
 }
 #show {
-  /* display: none; */
+  display: none;
 }
 #msg {
   color: #19559a;
