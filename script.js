@@ -156,8 +156,8 @@ function Create() {
   document.querySelector(".status").style.display = "flex";
   setTimeout(function () {
     window.location.href = "Travel.html?nam=" + encodeURIComponent(nam2);
-  }, 3000);
-  return true;
+  }, 30000000);
+  return false;
 }
 
 // Confirm the details

@@ -28,13 +28,7 @@ header {
 }
 
 /* user-style-start */
-#front-page {
-  padding: 5rem 0rem 7rem;
-  background-image: url(img/europe.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.account {
+#front-page .account {
   flex-direction: column;
   align-items: center;
 }
@@ -232,6 +226,7 @@ header {
   margin-top: 10rem;
 }
 #front-page {
+  padding: 0rem 0rem 7rem;
   background-image: url(img/dubai.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -257,7 +252,15 @@ header {
   animation: spin 2s linear infinite;
   margin: -5px 10px;
 }
-
+.loader-2 {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+  margin: 2px 10px;
+}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
