@@ -336,7 +336,7 @@ header {
 }
 
 #showUpi {
-  /* display: none; */
+  display: none;
 }
 /* confirm-form-start */
 
@@ -354,11 +354,11 @@ header {
 }
 .status-final {
   color: green;
-  /* display: none; */
+  display: none;
 }
 .Payment-final {
   color: green;
-  /* display: none; */
+  display: none;
 }
 .loader-final {
   border: 4px solid rgba(0, 0, 0, 0.1);
