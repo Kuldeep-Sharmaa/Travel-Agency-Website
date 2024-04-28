@@ -166,6 +166,7 @@ function oneStep() {
   var tourPack = document.getElementById("inputSta").value;
   var tourDate = document.getElementById("tour-date").value;
   var tourPeople = document.getElementById("number-people").value;
+  var Request = document.getElementById("Request").value;
   var checkbox = document.getElementById("checkbox");
   var lastName = document.querySelector("#last-name").value;
   var lastMail = document.querySelector("#last-mail").value;
@@ -234,6 +235,13 @@ function oneStep() {
     return false;
   }
 
+  // if the special request is empty
+  if (Request.trim() === "") {
+    //set it to Default
+    Request = "No";
+  }
+
+  // Terms and Conditions
   if (!checkbox.checked) {
     document.getElementById("error-check").innerHTML =
       "<span style='color: red;'>Please accept the Terms and Conditions</span>";
@@ -328,7 +336,7 @@ function oneStep() {
     document.querySelector(".Payment-final").style.display = "none";
     // after disapare the msg show this msg
     document.getElementById("error-upi").innerHTML =
-      "<span style='color: green;'>Payment Confirmed</span>";
+      "<span style='color: green;'>Payment Confirmed </span>";
     document.querySelector(".status-final").style.display = "inline";
   }, 5000);
 
@@ -350,8 +358,10 @@ function oneStep() {
       "&tourPack=" +
       encodeURIComponent(tourPack) +
       "&tourPeople=" +
-      encodeURIComponent(tourPeople);
-  }, 8000);
+      encodeURIComponent(tourPeople) +
+      "&Request=" +
+      encodeURIComponent(Request);
+  }, 20000);
   return true;
 }
 

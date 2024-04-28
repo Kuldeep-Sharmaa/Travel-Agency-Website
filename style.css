@@ -313,7 +313,7 @@ header {
 }
 #confirm h1 {
   font-size: 2.5rem;
-  color: #333; /* Change the color as needed */
+  color: #333;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -393,13 +393,13 @@ header {
   background-color: #f9f9f9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
-  text-align: left; /* Align text to the left for better readability */
+  text-align: left;
 }
 .bill-details h2 {
   margin-top: 0;
   font-size: 24px;
   color: #333;
-  text-align: center; /* Center-align the heading */
+  text-align: center;
 }
 .bill-details p {
   margin: 0;
@@ -407,19 +407,25 @@ header {
   border-bottom: 1px solid #eee;
 }
 .bill-details p:last-child {
-  border-bottom: none; /* Remove bottom border from the last paragraph */
+  border-bottom: none;
 }
 .bill-details strong {
   font-weight: bold;
   color: #333;
-  width: 150px; /* Fixed width for consistent spacing */
-  display: inline-block; /* Display as block to enable width property */
+  width: 150px;
+  display: inline-block;
 }
 .bill-details span {
   color: #666;
 }
+.bill-details #userID {
+  background-color: chartreuse;
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+}
 .bill-details .payment-status {
-  color: green; /* Style payment status with green color */
+  color: green;
 }
 /* bill-section-end */
 
