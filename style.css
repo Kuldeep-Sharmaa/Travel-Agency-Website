@@ -153,6 +153,7 @@ header {
   object-fit: cover;
   max-height: unset;
   margin-bottom: 1rem;
+  text-align: center;
 }
 .card a {
   text-decoration: none;
