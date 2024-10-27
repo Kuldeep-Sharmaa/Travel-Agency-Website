@@ -226,6 +226,8 @@ function oneStep() {
     }, 3000);
     return false;
   }
+
+  // Traveler length
   if (isNaN(tourPeople) || tourPeople === "" || tourPeople < 1) {
     document.getElementById("error-number").innerHTML =
       "<span style='color: red;'>Enter People</span>";
@@ -338,7 +340,7 @@ function oneStep() {
     document.getElementById("error-upi").innerHTML =
       "<span style='color: green;'>Payment Confirmed </span>";
     document.querySelector(".status-final").style.display = "inline";
-  }, 5000);
+  }, 3000);
 
   setTimeout(function () {
     window.location.href =
@@ -361,7 +363,7 @@ function oneStep() {
       encodeURIComponent(tourPeople) +
       "&Request=" +
       encodeURIComponent(Request);
-  }, 20000);
+  }, 5000);
   return true;
 }
 

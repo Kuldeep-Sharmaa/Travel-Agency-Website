@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="img/vecteezy_infographic-air-travel-flight-generative-ai_27730133.png"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
     <link
@@ -19,7 +23,9 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <a class="navbar-brand" href="Travel.html">Logo</a>
+            <a class="navbar-brand" href="Travel.html"
+              ><img class="logoImg" src="img/travel-bag.png" alt=""
+            /></a>
             <button
               class="navbar-toggler"
               type="button"
@@ -322,6 +328,45 @@
               protection, please verify your identity.</span
             >
             <form action="" class="row mt-2" id="lastStep">
+              <!-- final price -->
+              <div class="">
+                <label for="inputname4" class="form-label">Chrages</label>
+
+                <div class="form-group">
+                  <h3>Total Price: <span id="totalPrice"></span></h3>
+
+                  <script>
+                    function calculateTotalPrice() {
+                      // Get the values of price and travelers
+                      let finalPrice = parseFloat(
+                        document
+                          .getElementById("selected-price")
+                          .textContent.replace(/,/g, "") // Remove commas again, if any
+                      );
+                      let finalTravel = parseInt(
+                        document.getElementById("number-people").value
+                      );
+
+                      // Multiply price by number of travelers
+                      let newValue = finalPrice * finalTravel;
+
+                      // Display the result
+                      document.getElementById(
+                        "totalPrice"
+                      ).textContent = `₹${newValue.toLocaleString()}`;
+                    }
+
+                    // Event listener to recalculate total price when number of travelers changes
+                    document
+                      .getElementById("number-people")
+                      .addEventListener("input", calculateTotalPrice);
+
+                    // Initial calculation
+                    calculateTotalPrice();
+                  </script>
+                </div>
+              </div>
+
               <!-- name -->
               <div class="">
                 <label for="inputname4" class="form-label">Name</label>

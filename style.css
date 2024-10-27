@@ -26,7 +26,10 @@ header {
   font-family: var(--main-font--);
   box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.4);
 }
-
+header .logoImg {
+  max-width: 155px;
+  max-height: 49px;
+}
 /* user-style-start */
 #front-page .account {
   flex-direction: column;
